@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio 02</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <header>
+    <h1>AirSpace Defense</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!--GRID DE PERSONAS-->
+    <section id="inicio">
+      <h2>Personas</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="assets/Carlos.jpeg" alt="" class="card-img">
+          <div class="card-text">
+            <h3>Carlos</h3>
+            <p>
+              Carlos trabalha acompanhando os radares e os alvos detectados pelo sistema. Precisa visualizar as informações de forma rápida e clara para identificar possíveis situações de alerta.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/Rafael.jpeg" alt="" class="card-img">
+          <div class="card-text">
+            <h3>Rafael</h3>
+            <p>
+              Rafael é responsável por manter o sistema configurado e administrar os recursos utilizados nas simulações.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/André.jpeg" alt="" class="card-img">
+          <div class="card-text">
+            <h3>André</h3>
+            <p>
+              André utiliza o sistema para criar cenários e analisar o comportamento dos radares diante de diferentes situações.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/Bagre.webp" alt="" class="card-img">
+          <div class="card-text">
+            <h3>Bagre</h3>
+            <p>
+              Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre Bagre
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FORMULÁRIO-->
+    <section id="contato">
+      <h2>Formulário</h2>
+      <form class="form-grid">
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo full-width">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+
+        <div class="campo full-width">
+          <button type="submit">Enviar</button>
+        </div>
+
+      </form>
+    </section>
+
+    <!--TABELA-->
+    <section>
+      <h2>Tabela</h2>
+      <table>
+        <thead>
+          <tr id="titulo">
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Profissão</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carlos</td>
+            <td>32 Anos</td>
+            <td>Olinda</td>
+            <td>Operador de monitoramento aéreo</td>
+          </tr>
+          <tr>
+            <td>Rafael</td>
+            <td>28 Anos</td>
+            <td>Recife</td>
+            <td>Administrador de sistemas</td>
+          </tr>
+          <tr>
+            <td>André</td>
+            <td>35 Anos</td>
+            <td>Caruaru</td>
+            <td>Analista de simulações</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--PERSONA-->
+    <section id="sobre" class="persona">
+      <h2>Personas do Projeto</h2>
+      <div class="persona-dados">
+        <div>
+          <p><strong>Nome:</strong>Carlos</p>
+          <p><strong>Idade:</strong>32 Anos</p>
+          <p><strong>Profissão:</strong>Operador de monitoramento aéreo</p>
+          <p><strong>Objetivo:</strong>
+            Monitorar os radares e acompanhar a movimentação das aeronaves de forma rápida e precisa.</p>
+          <p><strong>Dificuldade:</strong>
+            Grande quantidade de informações para acompanhar ao mesmo tempo e dificuldade para identificar rapidamente novos alvos ou situações de alerta.</p>
+          <p><strong>Solução atual:</strong>
+            Utiliza sistemas de monitoramento que podem apresentar muitas informações simultaneamente, tornando o acompanhamento menos intuitivo e dificultando a identificação de eventos importantes.</p>
+        </div>
+      </div>
+    </section>
+      <section id="sobre" class="persona">
+        <div class="persona-dados">
+          <div>
+            <p><strong>Nome:</strong>Rafael</p>
+            <p><strong>Idade:</strong>28 Anos</p>
+            <p><strong>Profissão:</strong>Administrador de sistemas</p>
+            <p><strong>Objetivo:</strong>
+              Manter os radares, usuários e configurações do sistema organizados e atualizados.</p>
+            <p><strong>Dificuldade:</strong>
+              Gerenciar diferentes informações e configurações sem perder dados ou realizar configurações incorretas.</p>
+            <p><strong>Solução atual:</strong>
+              Realiza o gerenciamento de informações por meio de diferentes ferramentas ou registros separados, o que pode dificultar a organização e manutenção dos dados.</p>
+          </div>
+        </div>
+      </section>    
+      <section id="sobre" class="persona">
+        <div class="persona-dados">
+          <div>
+            <p><strong>Nome:</strong>André</p>
+            <p><strong>Idade:</strong>35 Anos</p>
+            <p><strong>Profissão:</strong>Analista de Simulação</p>
+            <p><strong>Objetivo:</strong>
+              Criar diferentes cenários e avaliar a eficiência dos radares durante as simulações.</p>
+            <p><strong>Dificuldade:</strong>
+              Criar cenários variados e analisar os resultados de forma rápida, principalmente quando existem vários radares e aeronaves envolvidos.</p>
+            <p><strong>Solução atual:</strong>
+              Utiliza métodos manuais ou ferramentas separadas para criar e analisar cenários, tornando o processo mais demorado e dificultando a comparação dos resultados.</p>
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AirSpace Defense. Todos os direitos reservados.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

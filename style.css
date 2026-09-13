@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  min-height: 100vh;
+}
+
+header  { grid-area: header; }
+nav     { grid-area: nav; }
+main    { grid-area: main; }
+footer  { grid-area: footer; }
+
+header {
+  background: #1f2937;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav {
+  background: #374151;
+  padding: 0.75rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4f46e5;
+}
+
+footer {
+  background: #1f2937;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* GRID DE PERSONAS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.card-img {
+  width: 130px;     
+  height: 130px;
+  object-fit: cover; 
+  border-radius: 50%;
+  flex-shrink: 0; 
+}
+
+.card-text {
+  margin-bottom: 0.3rem;
+}
+
+/* FORMULÁRIO */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 coluna */
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  background: #092869;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #244999;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #092869;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+th {
+  background: #f3f4f6;
+}
+
+tr:hover {
+  background-color: #8da0cc;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* PERSONA */
+.persona {
+  background: #fbfbfc;
+  border-left: 4px solid #092869;
+}
+
+.persona-dados {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 0.5rem;
+}
+
+.persona-dados p {
+  margin: 0;
+}
+
+.persona-dados strong {
+  margin-right: 0.2rem;
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .form-grid .full-width {
+    grid-column: 1 / -1; 
+  }
+
+  .persona-dados {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  main {
+    padding: 2rem 4rem;
+  }
+}
